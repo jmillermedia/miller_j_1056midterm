@@ -3,3 +3,8 @@
 .hidden {
 	display: none;
 }
+
+#wrapper {
+	margin: 0px auto;
+	width: 1200px;	
+}
