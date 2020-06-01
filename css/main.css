@@ -1,5 +1,22 @@
 /* CSS STYLESHEET START */
 
+@font-face {
+    font-family: 'hoboken-regular';
+    src: url('..fonts/hoboken-regular-webfont.woff2') format('woff2'),
+         url('..fonts/hoboken-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Serpentine';
+    src: url('Serpentine-Bold.woff2') format('woff2'),
+        url('Serpentine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .hidden {
 	display: none;
 }
@@ -7,4 +24,198 @@
 #wrapper {
 	margin: 0px auto;
 	width: 1200px;	
+}
+
+/* MAIN HEADER START */
+
+#mainHeader {
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	background: rgb(194,201,206);
+	background: -moz-linear-gradient(180deg, rgba(194,201,206,1) 0%, rgba(203,34,41,1) 46%);
+	background: -webkit-linear-gradient(180deg, rgba(194,201,206,1) 0%, rgba(203,34,41,1) 46%);
+	background: linear-gradient(180deg, rgba(194,201,206,1) 0%, rgba(203,34,41,1) 46%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2c9ce",endColorstr="#cb2229",GradientType=1);
+}
+
+#mainLogo {
+	width: 180px;
+	height: 205px;
+	margin-left: 84px;
+	margin-top: 8px;
+	position: absolute;
+}
+
+#headerNav {
+	margin-left: auto;
+	display: flex;
+	margin-right: 64px;
+}
+
+#headerNav ul {
+	display: flex;
+	flex-direction: row;
+	margin-top: 64px;
+}
+
+#headerNav ul li a {
+	font-family: hoboken-regular;
+	font-size: 24px;
+	color: #000;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+#pageTitle {
+	font-family: Serpentine;
+	font-size: 36px;
+	text-transform: uppercase;
+
+}
+
+/* FOOTER SECTION START */
+
+#mainFooter {
+	padding: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: rgb(203,34,41);
+	background: -moz-linear-gradient(180deg, rgba(203,34,41,1) 54%, rgba(194,201,206,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(203,34,41,1) 54%, rgba(194,201,206,1) 100%);
+	background: linear-gradient(180deg, rgba(203,34,41,1) 54%, rgba(194,201,206,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cb2229",endColorstr="#c2c9ce",GradientType=1);
+}
+
+#footerNav ul {
+	display: flex;
+	flex-direction: row;
+	font-family: hoboken-regular;
+}
+
+#footerNav ul li {
+	margin-left: 8px;
+}
+
+#footerNav ul li a {
+	color: #F2F2F2;
+	text-decoration: none;
+}
+
+#typefaceLogo {
+	width: 225px;
+}
+
+#socMBut {
+	display: flex;
+	flex-direction: row;
+}
+
+#socMBut img {
+	width: 35px;
+	margin: 8px;
+}
+
+#socialMediaNav {
+	width: 225px;
+}
+
+/* INDEX.HTML START */
+
+#welcomeSection {
+	width: 1200px;
+	height: 700px;
+	background-color: #c2c9ce; /*ideally, i would like this to be a video created in Cinema 4D*/
+	border-top: 15px black solid;
+	border-bottom: 15px black solid;
+	-webkit-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
+-moz-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
+box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
+}
+
+#welcomeSection h2 {
+	padding-top: 300px;
+	margin-left: 900px;
+}
+
+#welcomeSection img {
+	width: 450px;
+	height: 300px;
+	margin-left: 64px;
+	-webkit-box-shadow: -8px 8px 8px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: -8px 8px 8px 2px rgba(0,0,0,0.5);
+	box-shadow: -8px 8px 8px 2px rgba(0,0,0,0.5);
+}
+
+#welcomeWriteup {
+	margin-top: -80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#welcomeWriteup p {
+	font-family: hoboken-regular;
+	color: #F2F2F2;
+	width: 536px;
+	height: 115px;
+	line-height: 20px;
+	margin-left: auto;
+	margin-right: 64px;
+	padding: 16px;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+/* ABOUT US START */
+
+#partnerArticle h2 {
+	text-align: center;
+	margin-top: 64px;
+}
+
+#partnerArticle h3 {
+	font-family: Serpentine;
+	text-transform: uppercase;
+	margin-left: 64px;
+	margin-top: 64px;
+	font-size: 24px;
+}
+
+#partnerArticle p {
+	font-family: hoboken-regular;
+	color: #F2F2F2;
+	width: 589px;
+	line-height: 20px;
+	margin-left: 64px;
+	padding: 16px;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+#awardsSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 64px;
+}
+
+#awardsSection h2 {
+	font-family: Serpentine;
+	text-transform: uppercase;
+	font-size: 24px;
+	position: absolute;
+	margin-top: -64px;
+}
+
+#awardsSection p {
+	width: 330px;
+}
+
+#award {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
