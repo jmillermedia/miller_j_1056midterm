@@ -32,6 +32,7 @@
 	height: 100px;
 	display: flex;
 	flex-direction: row;
+	border-bottom: 15px black solid;
 	background: rgb(194,201,206);
 	background: -moz-linear-gradient(180deg, rgba(194,201,206,1) 0%, rgba(203,34,41,1) 46%);
 	background: -webkit-linear-gradient(180deg, rgba(194,201,206,1) 0%, rgba(203,34,41,1) 46%);
@@ -77,6 +78,7 @@
 /* FOOTER SECTION START */
 
 #mainFooter {
+	border-top: 15px black solid;
 	padding: 32px;
 	display: flex;
 	flex-direction: row;
@@ -128,11 +130,9 @@
 	width: 1200px;
 	height: 700px;
 	background-color: #c2c9ce; /*ideally, i would like this to be a video created in Cinema 4D*/
-	border-top: 15px black solid;
-	border-bottom: 15px black solid;
 	-webkit-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
--moz-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
+	-moz-box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
+	box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
 }
 
 #welcomeSection h2 {
@@ -171,6 +171,10 @@ box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
 
 /* ABOUT US START */
 
+#partnerArticle {
+	margin-bottom: 32px;
+}
+
 #partnerArticle h2 {
 	text-align: center;
 	margin-top: 64px;
@@ -187,7 +191,8 @@ box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
 #partnerArticle p {
 	font-family: hoboken-regular;
 	color: #F2F2F2;
-	width: 589px;
+	width: 500px;
+	height: 200px;
 	line-height: 20px;
 	margin-left: 64px;
 	padding: 16px;
@@ -195,10 +200,17 @@ box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
 	border-radius: 10px;
 }
 
+#partnerRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 #awardsSection {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 	margin-top: 64px;
 }
 
@@ -207,15 +219,211 @@ box-shadow: inset 0px 8px 8px 3px rgba(0,0,0,0.53);
 	text-transform: uppercase;
 	font-size: 24px;
 	position: absolute;
-	margin-top: -64px;
+	margin-top: -285px;
 }
 
 #awardsSection p {
+	font-family: hoboken-regular;
 	width: 330px;
+	line-height: 20px;
 }
 
-#award {
+#awardsSection img {
+	width: 200px;
+	height: 200px;
+}
+
+.award {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
+.award img {
+	margin-bottom: 32px;
+}
+
+.award h3 {
+	font-family: Serpentine;
+	margin-bottom: 16px;
+}
+
+#FAQ {
+	margin-bottom: 32px;
+	margin-top: 32px;
+}
+
+#FAQ h2 { 
+	text-align: right;
+	font-family: Serpentine;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 32px;
+	margin-right: 32px; 
+}
+
+#FAQ img {
+	position: absolute;
+	margin-top: 64px;
+}
+
+#FAQRow {
+	font-family: hoboken-regular;
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin-left: auto;
+}
+
+#FAQRow p {
+	line-height: 20px;
+	letter-spacing: .5px;
+	margin-bottom: 8px;
+}
+
+#FAQRow p:first-letter {
+	font-size: 20px;
+}
+
+/* AROMAS.HTML START */
+
+#aromas {
+/*	padding-top: 256px;*/
+	background-color: #c2c9ce;
+	padding-bottom: 64px;
+}
+
+#aromas.pageTitle {
+	padding-top: 64px;
+}
+
+#aromas h2 {
+	text-align: center;
+	padding-top: 64px;
+}
+
+#aromas h3 {
+	color: #F2F2F2;
+	font-size: 24px;
+	font-family: Serpentine;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.aromaR {
+	display: flex;
+	margin-top: 290px;
+}
+
+.aromaR h3 {
+	padding-top: 128px;
+	padding-left: 64px;
+}
+
+.aromaL h3 {
+	padding-top: 128px;
+	margin-left: 500px;
+}
+
+.aromaR .aromaWriteup {
+	margin-left: 64px;
+}
+
+.aromaL .aromaWriteup {
+	margin-left: 564px;
+}
+
+.aromaL h3 {
+	padding-top: 128px;
+	padding-left: 64px;
+}
+
+
+.aromaL {
+	display: flex;
+	flex-direction: row;
+	margin-top: 290px;
+}
+
+.aromaWriteup {
+	font-family: hoboken-regular;
+	color: #F2F2F2;
+	width: 500px;
+	height: 80px;
+	padding: 32px;
+	margin-top: 16px;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 10px;
+	line-height: 20px;
+}
+
+
+.aromaR img {
+	width: 247px;
+	height: 725px;
+	position: absolute;
+	margin-left: 840px;
+	margin-top: -610px; 
+}
+
+.aromaL img {
+	width: 247px;
+	height: 725px;
+	position: absolute;
+	margin-left: 128px;
+	margin-top: -610px; 
+}
+
+#aroma1 {
+	background-image: url("../images/aroma1.jpg");
+	height: 420px;
+	width: 1200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
+#aroma2 {
+	background-image: url("../images/aroma2.jpg");
+	height: 420px;
+	width: 1200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
+#aroma3 {
+	background-image: url("../images/aroma3.jpg");
+	height: 420px;
+	width: 1200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
+#aroma4 {
+	background-image: url("../images/aroma4.jpg");
+	height: 420px;
+	width: 1200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
