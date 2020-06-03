@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: 'hoboken-regular';
-    src: url('..fonts/hoboken-regular-webfont.woff2') format('woff2'),
-         url('..fonts/hoboken-regular-webfont.woff') format('woff');
+    src: url('../fonts/hoboken-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hoboken-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Serpentine';
-    src: url('Serpentine-Bold.woff2') format('woff2'),
-        url('Serpentine-Bold.woff') format('woff');
+    src: url('../fonts/Serpentine-Bold.woff2') format('woff2'),
+        url('../fonts/Serpentine-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -425,5 +425,68 @@
 	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
+/* PROMOTIONS.HTML START */
+
+#promotions h2 {
+	text-align: center;
+	margin-top: 32px;
+}
+
+/* MERCH.HTML START */
+
+#merch {
+	background-color: #c2c9ce;
+}
+
+#merch p {
+	font-family: hoboken-regular;
+	line-height: 20px;
+}
+
+#merch h2 {
+	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 64px;
+}
+
+#merch img {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	-webkit-box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,.5)
+	box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,.5);
+}
+
+#merch button {
+	font-family: Serpentine;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #F2F2F2;
+	height: 40px;
+	position: absolute;
+	margin-left: 175px;
+	margin-top: 13px;
+	background-color: #cb2229;
+}
+
+.merchInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.merchRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 64px;
+}
+
+.merchItem {
+	display: flex;
+	width: 300px;
+	flex-direction: column;
 }
 
