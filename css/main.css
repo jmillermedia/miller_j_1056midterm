@@ -172,7 +172,7 @@
 /* ABOUT US START */
 
 #partnerArticle {
-	
+	margin-bottom: 32px;
 }
 
 #partnerArticle h2 {
@@ -191,12 +191,19 @@
 #partnerArticle p {
 	font-family: hoboken-regular;
 	color: #F2F2F2;
-	width: 536px;
+	width: 500px;
+	height: 200px;
 	line-height: 20px;
 	margin-left: 64px;
 	padding: 16px;
 	background-color: rgba(0,0,0,.5);
 	border-radius: 10px;
+}
+
+#partnerRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #awardsSection {
@@ -239,6 +246,43 @@
 .award h3 {
 	font-family: Serpentine;
 	margin-bottom: 16px;
+}
+
+#FAQ {
+	margin-bottom: 32px;
+	margin-top: 32px;
+}
+
+#FAQ h2 { 
+	text-align: right;
+	font-family: Serpentine;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 32px;
+	margin-right: 32px; 
+}
+
+#FAQ img {
+	position: absolute;
+	margin-top: 64px;
+}
+
+#FAQRow {
+	font-family: hoboken-regular;
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin-left: auto;
+}
+
+#FAQRow p {
+	line-height: 20px;
+	letter-spacing: .5px;
+	margin-bottom: 8px;
+}
+
+#FAQRow p:first-letter {
+	font-size: 20px;
 }
 
 /* AROMAS.HTML START */
