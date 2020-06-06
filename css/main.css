@@ -171,13 +171,17 @@
 
 /* ABOUT US START */
 
+#aboutUsSection {
+	background-color: #c2c9ce;
+	padding-top: 64px;
+}
+
 #partnerArticle {
 	margin-bottom: 32px;
 }
 
 #partnerArticle h2 {
 	text-align: center;
-	margin-top: 64px;
 }
 
 #partnerArticle h3 {
@@ -249,8 +253,8 @@
 }
 
 #FAQ {
-	margin-bottom: 32px;
-	margin-top: 32px;
+	padding-bottom: 32px;
+	margin-top: -64px;
 }
 
 #FAQ h2 { 
@@ -258,8 +262,8 @@
 	font-family: Serpentine;
 	text-transform: uppercase;
 	font-size: 24px;
-	margin-bottom: 32px;
-	margin-right: 32px; 
+	margin-bottom: 16px;
+	margin-right: 64px; 
 }
 
 #FAQ img {
@@ -279,6 +283,7 @@
 	line-height: 20px;
 	letter-spacing: .5px;
 	margin-bottom: 8px;
+	width: 536px;
 }
 
 #FAQRow p:first-letter {
@@ -429,10 +434,54 @@
 
 /* PROMOTIONS.HTML START */
 
+#promotions {
+	padding-top: 32px;
+	padding-bottom: 64px;
+	background-color: #c2c9ce;
+}
+
 #promotions h2 {
 	text-align: center;
 	margin-top: 32px;
+	margin-bottom: 32px;
 }
+
+#rotatingKey {
+	width: 75px;
+	height: 75px;
+	display: block;
+	margin: 0px auto;
+	padding: 32px;
+}
+
+#rotatingKey {
+	transform-origin: center; 
+	animation: rotate 5s infinite ease-in-out;
+}
+
+@keyframes rotate {
+       0% {
+       transform: rotate(0deg)
+       }
+       100% {
+       transform: rotate(360deg)
+  }
+}
+
+.beerAdRow {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	margin-top: 32px;
+ }
+
+ #centerAd {
+ 	margin: 0px auto;
+ 	display: block;
+ 	margin-top: 32px;
+ }
+
+
 
 /* MERCH.HTML START */
 
@@ -447,7 +496,7 @@
 
 #merch h2 {
 	text-align: center;
-	padding-top: 32px;
+	padding-top: 64px;
 	padding-bottom: 64px;
 }
 
