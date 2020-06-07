@@ -26,6 +26,37 @@
 	width: 1200px;	
 }
 
+#rotatingKey {
+	width: 75px;
+	height: 75px;
+	display: block;
+	margin: 0px auto;
+	padding: 32px;
+}
+
+#rotatingKey {
+	transform-origin: center; 
+	animation: rotate 10s infinite ease-in-out;
+}
+
+@keyframes rotate {
+       0% {
+       transform: rotate(0deg)
+       }
+       25% {
+       transform: rotate(360deg)
+       }
+       50% {
+       	transform: rotate(0deg)
+       }
+       50% {
+       	transform: scaleY(0.500);
+       }
+       65% {
+       	transform: scaleY(1);
+       }
+ }
+
 /* MAIN HEADER START */
 
 #mainHeader {
@@ -46,6 +77,11 @@
 	margin-left: 84px;
 	margin-top: 8px;
 	position: absolute;
+	transition: all 1.35s;
+}
+
+#mainLogo:hover {
+	width: 185px;
 }
 
 #headerNav {
@@ -60,12 +96,28 @@
 	margin-top: 64px;
 }
 
+#headerNav ul li {
+	transition: all .5s;
+	margin-left: 10px;
+	border-radius: 10px 10px 0px 0px;
+	padding: 8px;
+}
+
+#headerNav ul li:hover {
+	background-color: #000;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 3px 3px 2px rgba(0,0,0,.75);
+}
+
 #headerNav ul li a {
-	font-family: hoboken-regular;
-	font-size: 24px;
-	color: #000;
+	font-family: Serpentine;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #F2F2F2;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	text-decoration: none;
-	margin-left: 20px;
+	padding: 8px;
 }
 
 #pageTitle {
@@ -104,6 +156,13 @@
 #footerNav ul li a {
 	color: #F2F2F2;
 	text-decoration: none;
+	transition: all .5s;
+}
+
+#footerNav ul li a:hover {
+	color: #c2c9ce;
+	text-shadow: 0px 2px 1px rgba(0,0,0,.25);
+	text-decoration: underline;
 }
 
 #typefaceLogo {
@@ -118,6 +177,11 @@
 #socMBut img {
 	width: 35px;
 	margin: 8px;
+	transition: all .3s;
+}
+
+#socMBut img:hover {
+	margin-top: 3px;
 }
 
 #socialMediaNav {
@@ -293,7 +357,6 @@
 /* AROMAS.HTML START */
 
 #aromas {
-/*	padding-top: 256px;*/
 	background-color: #c2c9ce;
 	padding-bottom: 64px;
 }
@@ -309,10 +372,10 @@
 
 #aromas h3 {
 	color: #F2F2F2;
-	font-size: 24px;
+	font-size: 36px;
 	font-family: Serpentine;
 	text-transform: uppercase;
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 }
 
@@ -369,7 +432,7 @@
 	height: 725px;
 	position: absolute;
 	margin-left: 840px;
-	margin-top: -610px; 
+	margin-top: -620px; 
 }
 
 .aromaL img {
@@ -377,7 +440,7 @@
 	height: 725px;
 	position: absolute;
 	margin-left: 128px;
-	margin-top: -610px; 
+	margin-top: -620px; 
 }
 
 #aroma1 {
@@ -446,28 +509,6 @@
 	margin-bottom: 32px;
 }
 
-#rotatingKey {
-	width: 75px;
-	height: 75px;
-	display: block;
-	margin: 0px auto;
-	padding: 32px;
-}
-
-#rotatingKey {
-	transform-origin: center; 
-	animation: rotate 5s infinite ease-in-out;
-}
-
-@keyframes rotate {
-       0% {
-       transform: rotate(0deg)
-       }
-       100% {
-       transform: rotate(360deg)
-  }
-}
-
 .beerAdRow {
  	display: flex;
  	flex-direction: row;
@@ -494,6 +535,16 @@
 	line-height: 20px;
 }
 
+.merchInfo p:first-child {
+	font-size: 25px;
+	padding-top: 5px;
+}
+
+.fauxBold {
+	text-shadow: 1px 0 0 currentColor;
+	letter-spacing: 1px;
+}
+
 #merch h2 {
 	text-align: center;
 	padding-top: 64px;
@@ -504,9 +555,8 @@
 	width: 300px;
 	height: 300px;
 	background-color: white;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	border: 2px solid black;
+	border-radius: 4px;
 }
 
 #merch button {
@@ -517,8 +567,19 @@
 	height: 40px;
 	position: absolute;
 	margin-left: 175px;
-	margin-top: 13px;
+	margin-top: 22px;
 	background-color: #cb2229;
+	border-radius: 5px;
+}
+
+#merch button:hover {
+	color: #000;
+	background-color: #c2c9ce;
+}
+
+#merch button:active {
+	background-color: #F2F2F2;
+	margin-top: 25px;
 }
 
 .merchInfo {
@@ -574,7 +635,7 @@ input, textarea  {
 	font-size: 11px;
 	margin-bottom: 16px;
 	padding: 8px;
-	width: 300px;
+	width: 250px;
 	height: 8px;
 	background-color: #F2F2F2;
 	display: block;
@@ -588,19 +649,25 @@ input, textarea  {
 }
 
 #submit {
-	display: flex;
-	flex-direction: column;
-	width: 75px;
+	font-family: Serpentine;
+	width: 80px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #F2F2F2;
 	height: 30px;
-	text-align: center;
-	color: #FFF;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	position: absolute;
 	background-color: #cb2229;
-	font-size: 14px;
-	border: 1px solid #003471;
+	border-radius: 5px;
+}
+
+#submit:hover {
+	background-color: #c2c9ce;
+	color: #000;
+}
+
+#submit:active {
+	background-color: #F2F2F2;
+	margin-top: 3px;
 }
 
 #addressArea {
